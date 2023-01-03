@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "source\Cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibUnitTests", "source\Chapter04\CalculatorLibUnitTests\CalculatorLibUnitTests.csproj", "{E0828C33-8CC6-4824-8EF8-E89835C99C21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandlingLib", "source\Chapter04\CallStackExceptionHandlingLib\CallStackExceptionHandlingLib.csproj", "{9632DC61-7964-4775-BD8A-76A14D335B47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallStackExceptionHandling", "source\Chapter04\CallStackExceptionHandling\CallStackExceptionHandling.csproj", "{30BF3C56-E65E-431F-A737-AE05E4CDCE2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9632DC61-7964-4775-BD8A-76A14D335B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9632DC61-7964-4775-BD8A-76A14D335B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9632DC61-7964-4775-BD8A-76A14D335B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9632DC61-7964-4775-BD8A-76A14D335B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30BF3C56-E65E-431F-A737-AE05E4CDCE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30BF3C56-E65E-431F-A737-AE05E4CDCE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30BF3C56-E65E-431F-A737-AE05E4CDCE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30BF3C56-E65E-431F-A737-AE05E4CDCE2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,5 +59,7 @@ Global
 		{183FFFA1-E7EA-4BA9-8882-C9F62908C9A5} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
 		{D9686489-821A-40A2-84C3-C30BFF56D17A} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
 		{E0828C33-8CC6-4824-8EF8-E89835C99C21} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
+		{9632DC61-7964-4775-BD8A-76A14D335B47} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
+		{30BF3C56-E65E-431F-A737-AE05E4CDCE2D} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
 	EndGlobalSection
 EndGlobal
