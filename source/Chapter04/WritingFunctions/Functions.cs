@@ -6,20 +6,17 @@
 
 internal partial class Program
 {
-    static void TimesTables(byte number, byte size = 12)
+    private static void TimesTables(byte number, byte size = 12)
     {
         WriteLine($"This is the {number} times table with {size} rows:");
-        for (int row = 1; row <= size; row++)
-        {
-            WriteLine($"{row} X {number} = {row * number}");
-        }
+        for (var row = 1; row <= size; row++) WriteLine($"{row} X {number} = {row * number}");
         WriteLine();
     }
 
-    static decimal CalculateTax(
+    private static decimal CalculateTax(
         decimal amount, string twoLetterRegionCode)
     {
-        decimal rate = twoLetterRegionCode switch
+        var rate = twoLetterRegionCode switch
         {
             "CH" => // Switzerland
                 0.08M,

@@ -1,37 +1,48 @@
 ﻿using System.Diagnostics;
 using Microsoft.Extensions.Configuration;
 
-var logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "log.txt");
+namespace Instrumenting;
 
-WriteLine($"Write log to: {logPath}");
+internal static partial class Program
+{
+    public static void Main(string[] args)
+    {
+        var logPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory), "log.txt");
 
-TextWriterTraceListener logFile = new(File.CreateText(logPath));
+        WriteLine($"Write log to: {logPath}");
 
-Trace.Listeners.Add(logFile);
+        TextWriterTraceListener logFile = new(File.CreateText(logPath));
 
-Trace.AutoFlush = true;
+        Trace.Listeners.Add(logFile);
 
-Debug.WriteLine("Debug says, I am watching!");
-Trace.WriteLine("Trace says: I am watching!");
+        Trace.AutoFlush = true;
 
-WriteLine("Reading from appsettings.json in {0}", Directory.GetCurrentDirectory());
+        Debug.WriteLine("Debug says, I am watching!");
+        Trace.WriteLine("Trace says: I am watching!");
 
-ConfigurationBuilder builder = new();
+        WriteLine("Reading from appsettings.json in {0}", Directory.GetCurrentDirectory());
 
-builder.SetBasePath(Directory.GetCurrentDirectory());
-builder.AddJsonFile("appsettings.json", true, true);
+        ConfigurationBuilder builder = new();
 
-var configutation = builder.Build();
+        builder.SetBasePath(Directory.GetCurrentDirectory());
+        builder.AddJsonFile("appsettings.json", true, true);
 
-TraceSwitch ts = new(
-    "PacktSwitch",
-    "This switch is set via a JSON config.");
+        var configutation = builder.Build();
 
-configutation.GetSection("PacktSwitch").Bind(ts);
+        TraceSwitch ts = new(
+            "PacktSwitch",
+            "This switch is set via a JSON config.");
 
-Trace.WriteLine(ts.TraceError, "Trace error");
-Trace.WriteLine(ts.TraceWarning, "Trace warning");
-Trace.WriteLine(ts.TraceInfo, "Trace information");
-Trace.WriteLine(ts.TraceVerbose, "Trace verbose");
+        configutation.GetSection("PacktSwitch").Bind(ts);
 
-Console.ReadLine();
+        Trace.WriteLine(ts.TraceError, "Trace error");
+        Trace.WriteLine(ts.TraceWarning, "Trace warning");
+        Trace.WriteLine(ts.TraceInfo, "Trace information");
+        Trace.WriteLine(ts.TraceVerbose, "Trace verbose");
+
+        int unitsIsStock = 12;
+        LogSourceDetails(unitsIsStock > 10);
+
+        Console.ReadLine();
+    }
+}

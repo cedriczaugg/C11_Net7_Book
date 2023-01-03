@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrumenting", "source\Cha
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter04", "Chapter04", "{B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLib", "source\Chapter04\CalculatorLib\CalculatorLib.csproj", "{D9686489-821A-40A2-84C3-C30BFF56D17A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLibUnitTests", "source\Chapter04\CalculatorLibUnitTests\CalculatorLibUnitTests.csproj", "{E0828C33-8CC6-4824-8EF8-E89835C99C21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{CE612588-4925-46F9-9CF3-615E034EB924}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE612588-4925-46F9-9CF3-615E034EB924}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE612588-4925-46F9-9CF3-615E034EB924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9686489-821A-40A2-84C3-C30BFF56D17A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9686489-821A-40A2-84C3-C30BFF56D17A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9686489-821A-40A2-84C3-C30BFF56D17A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9686489-821A-40A2-84C3-C30BFF56D17A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0828C33-8CC6-4824-8EF8-E89835C99C21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -33,5 +45,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CE612588-4925-46F9-9CF3-615E034EB924} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
 		{183FFFA1-E7EA-4BA9-8882-C9F62908C9A5} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
+		{D9686489-821A-40A2-84C3-C30BFF56D17A} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
+		{E0828C33-8CC6-4824-8EF8-E89835C99C21} = {B7D14C22-F4C0-4D1F-B741-6ADB4D3D8332}
 	EndGlobalSection
 EndGlobal
