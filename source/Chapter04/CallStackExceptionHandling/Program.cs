@@ -1,3 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using CallStackExceptionHandlingLib;
+using static System.Console;
 
-Console.WriteLine("Hello, World!");
+WriteLine("In Main.");
+
+Alpha();
+
+void Alpha()
+{
+    WriteLine("In Alpha.");
+    Beta();
+
+    void Beta()
+    {
+        WriteLine("In Beta.");
+        Calculator.Gamma();
+    }
+}
