@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿internal partial class Program
+{
+    public static void Main(string[] args)
+    {
+        TimesTables(7, 15);
+    }
+}
