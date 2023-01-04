@@ -6,7 +6,7 @@ namespace Packt.Shared;
 
 partial class Program
 {
-    static void OutputPeopleNames(IEnumerable<Person> people, string title)
+    static void OutputPeopleNames(Person?[] people, string title)
     {
         WriteLine(title);
         foreach (Person? p in people)
