@@ -2,8 +2,6 @@
 // Copyright (c)  ETA Manufacture Horlogère Suisse SA. All rights reserved.
 // </copyright>
 
-using System.Net;
-
 namespace Packt.Shared;
 
 public class Passenger
@@ -32,6 +30,7 @@ public class FirstClassPassenger : Passenger
 public class CoachClassPassenger : Passenger
 {
     public double CarryOnKG { get; set; }
+
     public override string ToString()
     {
         return $"Coach Class with {CarryOnKG:N2} KG carry on: {Name}";

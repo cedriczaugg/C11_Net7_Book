@@ -2,8 +2,6 @@
 // Copyright (c)  ETA Manufacture Horlogère Suisse SA. All rights reserved.
 // </copyright>
 
-using System.Runtime.CompilerServices;
-
 namespace Packt.Shared;
 
 public class ImmutablePerson
