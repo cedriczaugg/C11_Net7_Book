@@ -40,9 +40,9 @@ internal static partial class Program
         Trace.WriteLine(ts.TraceInfo, "Trace information");
         Trace.WriteLine(ts.TraceVerbose, "Trace verbose");
 
-        int unitsIsStock = 12;
+        var unitsIsStock = 12;
         LogSourceDetails(unitsIsStock > 10);
 
-        Console.ReadLine();
+        ReadLine();
     }
 }

@@ -14,12 +14,12 @@ public class CalculatorUnitTests
         Calculator calc = new();
 
         // Act
-        double actual = calc.Add(a, b);
+        var actual = calc.Add(a, b);
 
         // Assert
         Assert.Equal(expected, actual);
     }
-    
+
     [Fact]
     public void TestAdding2And3()
     {
@@ -30,7 +30,7 @@ public class CalculatorUnitTests
         Calculator calc = new();
 
         // Act
-        double actual = calc.Add(a, b);
+        var actual = calc.Add(a, b);
 
         // Assert
         Assert.Equal(expected, actual);
