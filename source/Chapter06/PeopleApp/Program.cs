@@ -44,12 +44,29 @@ internal partial class Program
             lookupIntString[key]);
 
         // Assign a method to the Shout delegate.
-        harry.Shout = Harry_Shout;
+        harry.Shout += Harry_Shout;
+        harry.Shout += Harry_Shout2;
 
         // call the poke method that raises the Shout event
         harry.Poke();
         harry.Poke();
         harry.Poke();
         harry.Poke();
+        
+        Person?[] people =
+        {
+            null,
+            new() { Name = "Simon" },
+            new() { Name = "Jenny" },
+            new() { Name = "Adam" },
+            new() { Name = null },
+            new() { Name = "Richard" }
+        };
+        
+        OutputPeopleNames(people, "Initial list of people:");
+
+        Array.Sort(people);
+        
+        OutputPeopleNames(people, "After sorting using Person's IComparable implementation:");
     }
-}    
+}
