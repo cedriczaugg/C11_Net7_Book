@@ -52,7 +52,7 @@ internal partial class Program
         harry.Poke();
         harry.Poke();
         harry.Poke();
-        
+
         Person?[] people =
         {
             null,
@@ -62,17 +62,17 @@ internal partial class Program
             new() { Name = null },
             new() { Name = "Richard" }
         };
-        
+
         OutputPeopleNames(people, "Initial list of people:");
 
         Array.Sort(people, new PersonComparer());
-        
+
         OutputPeopleNames(people, "After sorting using Person's IComparable implementation:");
 
-        displacementVector dv1 = new displacementVector(3, 5);
-        displacementVector dv2 = new displacementVector(-2, 7);
+        var dv1 = new displacementVector(3, 5);
+        var dv2 = new displacementVector(-2, 7);
 
-        displacementVector dv3 = dv1 + dv2;
-        WriteLine($"({dv1.X}, {dv1.Y}) + ({dv2.X}, {dv2.Y}) = ({dv3.X}, { dv3.Y})");
+        var dv3 = dv1 + dv2;
+        WriteLine($"({dv1.X}, {dv1.Y}) + ({dv2.X}, {dv2.Y}) = ({dv3.X}, {dv3.Y})");
     }
 }

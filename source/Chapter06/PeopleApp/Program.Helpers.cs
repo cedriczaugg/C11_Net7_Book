@@ -4,15 +4,13 @@
 
 namespace Packt.Shared;
 
-partial class Program
+internal partial class Program
 {
-    static void OutputPeopleNames(Person?[] people, string title)
+    private static void OutputPeopleNames(Person?[] people, string title)
     {
         WriteLine(title);
-        foreach (Person? p in people)
-        {
+        foreach (var p in people)
             WriteLine(" {0}",
                 p is null ? "<null> Person" : p.Name ?? "<null> Name");
-        }
     }
 }

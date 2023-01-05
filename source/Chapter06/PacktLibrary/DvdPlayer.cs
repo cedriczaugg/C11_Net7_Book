@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Packt.Shared;
+﻿namespace Packt.Shared;
 
 internal class DvdPlayer : IPlayabke
 {
@@ -18,4 +12,3 @@ internal class DvdPlayer : IPlayabke
         WriteLine("DVD player is playing.");
     }
 }
-
