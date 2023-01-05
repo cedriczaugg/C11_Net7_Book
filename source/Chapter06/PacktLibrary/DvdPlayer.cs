@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PacktLibrary
+namespace Packt.Shared;
+
+internal class DvdPlayer : IPlayabke
 {
-    internal class DvdPlayer
+    public void Play()
     {
+        WriteLine("DVD player is pausing.");
+    }
+
+    public void Pause()
+    {
+        WriteLine("DVD player is playing.");
     }
 }
+
