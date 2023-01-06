@@ -74,5 +74,16 @@ internal partial class Program
 
         var dv3 = dv1 + dv2;
         WriteLine($"({dv1.X}, {dv1.Y}) + ({dv2.X}, {dv2.Y}) = ({dv3.X}, {dv3.Y})");
+
+        Employee john = new()
+        {
+            Name = "John Jones",
+            DateOfBirth = new(1990, 7, 28)
+        };
+        john.WriteToConsole();
+        john.EmployeeCode = "JJ001";
+        john.HireDate = new(204, 11, 23);
+        WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
     }
+
 }
