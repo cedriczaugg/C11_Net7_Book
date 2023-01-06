@@ -56,4 +56,9 @@ public class Person : object, IComparable<Person?>
         AngerLevel++;
         if (AngerLevel >= 3) Shout?.Invoke(this, EventArgs.Empty);
     }
+
+    public override string ToString()
+    {
+        return $"{Name} is a {base.ToString()}";
+    }
 }

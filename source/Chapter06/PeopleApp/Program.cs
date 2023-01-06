@@ -84,6 +84,16 @@ internal partial class Program
         john.EmployeeCode = "JJ001";
         john.HireDate = new(204, 11, 23);
         WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
+
+        WriteLine(john.ToString());
+
+        Employee aliceInEmployee = new()
+            { Name = "Alice", EmployeeCode = "AA123" };
+        Person aliceInPerson = aliceInEmployee;
+        aliceInEmployee.WriteToConsole();
+        aliceInPerson.WriteToConsole();
+        WriteLine(aliceInEmployee.ToString());
+        WriteLine(aliceInPerson.ToString());
     }
 
 }
