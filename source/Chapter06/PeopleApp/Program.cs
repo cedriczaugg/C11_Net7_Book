@@ -94,6 +94,7 @@ internal partial class Program
         aliceInPerson.WriteToConsole();
         WriteLine(aliceInEmployee.ToString());
         WriteLine(aliceInPerson.ToString());
-    }
 
+        Employee explicitAlice = (Employee)aliceInPerson;
+    }
 }
