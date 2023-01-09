@@ -8,6 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Using Include="System.Console" Static="true"/>
+        <Using Include="System.Console" Static="true" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
     </ItemGroup>
 </Project>

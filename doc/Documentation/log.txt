@@ -1,0 +1,1 @@
+{"message":"No project detected for extracting metadata.","source":"MetadataCommand.ExtractMetadata","date_time":"2023-01-09T10:49:52.30128Z","message_severity":"warning","correlation_id":"D62A8C26-1BFE-4C82-B368-CC1BD68D8778.1.1.3"}
