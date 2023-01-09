@@ -96,5 +96,9 @@ internal partial class Program
         WriteLine(aliceInPerson.ToString());
 
         Employee explicitAlice = (Employee)aliceInPerson;
+        if (aliceInPerson is Employee)
+        {
+            WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+        }
     }
 }
