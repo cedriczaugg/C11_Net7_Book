@@ -37,25 +37,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarningsAsErrors", "source\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAnalyzing", "source\Chapter06\CodeAnalyzing\CodeAnalyzing.csproj", "{E7D99D20-9744-4F2A-9621-69CA9E68CF35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "doc\Documentation\Documentation.csproj", "{D7E69823-A862-4041-8BAD-199842EEF6F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Documentation", "doc\Documentation\Documentation.csproj", "{D7E69823-A862-4041-8BAD-199842EEF6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch06Ex02Inheritance", "source\Chapter06\Ch06Ex02Inheritance\Ch06Ex02Inheritance.csproj", "{4900769E-3B84-4312-BD4F-E12A5F16BBB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch06Ex02Inheritance", "source\Chapter06\Ch06Ex02Inheritance\Ch06Ex02Inheritance.csproj", "{4900769E-3B84-4312-BD4F-E12A5F16BBB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter07", "Chapter07", "{42CD4CF9-E006-4B03-86B4-AF2656FF7BFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssembliesAndNamespaces", "source\Chapter07\AssembliesAndNamespaces\AssembliesAndNamespaces.csproj", "{5D615796-79F1-4E8B-9A27-84DE8AD47402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssembliesAndNamespaces", "source\Chapter07\AssembliesAndNamespaces\AssembliesAndNamespaces.csproj", "{5D615796-79F1-4E8B-9A27-84DE8AD47402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "source\Chapter07\SharedLibrary\SharedLibrary.csproj", "{59B0C245-49EC-4C30-81E5-B8E448C38036}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "source\Chapter07\SharedLibrary\SharedLibrary.csproj", "{59B0C245-49EC-4C30-81E5-B8E448C38036}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetEverywhere", "source\Chapter07\DotNetEverywhere\DotNetEverywhere.csproj", "{E4468E2C-52E3-4DFA-A9D5-8F5FE106E0AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetEverywhere", "source\Chapter07\DotNetEverywhere\DotNetEverywhere.csproj", "{E4468E2C-52E3-4DFA-A9D5-8F5FE106E0AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter08", "Chapter08", "{2DBB03B1-6E67-4BD6-9DEE-8D369641793D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithNumbers", "source\Chapter08\WorkingWithNumbers\WorkingWithNumbers.csproj", "{1AB58251-E023-4CEA-B5A9-4CF9B33E86D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithNumbers", "source\Chapter08\WorkingWithNumbers\WorkingWithNumbers.csproj", "{1AB58251-E023-4CEA-B5A9-4CF9B33E86D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithText", "source\Chapter08\WorkingWithText\WorkingWithText.csproj", "{84E95624-D347-4272-B2E7-EB88BD50E621}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithText", "source\Chapter08\WorkingWithText\WorkingWithText.csproj", "{84E95624-D347-4272-B2E7-EB88BD50E621}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRegularExpressions", "source\Chapter08\WorkingWithRegularExpressions\WorkingWithRegularExpressions.csproj", "{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithRegularExpressions", "source\Chapter08\WorkingWithRegularExpressions\WorkingWithRegularExpressions.csproj", "{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithCollections", "source\Chapter08\WorkingWithCollections\WorkingWithCollections.csproj", "{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRanges", "source\Chapter08\WorkingWithRanges\WorkingWithRanges.csproj", "{BE872CEF-AE2B-45C3-9431-279CCA44645A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +155,14 @@ Global
 		{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE872CEF-AE2B-45C3-9431-279CCA44645A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE872CEF-AE2B-45C3-9431-279CCA44645A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE872CEF-AE2B-45C3-9431-279CCA44645A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE872CEF-AE2B-45C3-9431-279CCA44645A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,6 +190,8 @@ Global
 		{1AB58251-E023-4CEA-B5A9-4CF9B33E86D4} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
 		{84E95624-D347-4272-B2E7-EB88BD50E621} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
 		{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
+		{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
+		{BE872CEF-AE2B-45C3-9431-279CCA44645A} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4CE8306-EB58-46E7-B70F-B290BC23BED4}
