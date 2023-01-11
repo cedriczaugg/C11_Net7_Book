@@ -13,7 +13,7 @@ WriteLine($"{bigger,40:N0}");
 WriteLine("Working with complex numbers:");
 Complex c1 = new(real: 4, imaginary: 2);
 Complex c2 = new(real: 3, imaginary: 7);
-Complex c3 = c1 + c2;
+Complex c3 = Complex.Add(c1, c2);
 // output using default ToString implementation
 WriteLine($"{c1} added to {c2} is {c3}");
 // output using custom format
