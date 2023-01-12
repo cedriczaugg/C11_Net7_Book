@@ -65,7 +65,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithNetworkResources
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter09", "Chapter09", "{A3147F64-A805-474B-8A21-A5E172BD9C08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "source\Chapter09\ConsoleApp1\ConsoleApp1.csproj", "{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFileSystems", "source\Chapter09\WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
