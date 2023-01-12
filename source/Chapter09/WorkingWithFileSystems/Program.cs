@@ -35,3 +35,25 @@ foreach (DriveInfo drive in DriveInfo.GetDrives())
         WriteLine("{0,-30} | {1,-10}", drive.Name, drive.DriveType);
     }
 }
+
+SectionTitle("Managing directories");
+
+// Define a directory path for a new folder
+// starting in the user's folder.
+string newFolder = Combine(GetFolderPath(SpecialFolder.Personal), "NewFolder");
+
+WriteLine($"Working with: {newFolder}");
+
+// Check if it exists
+WriteLine($"Does it exist? {Path.Exists(newFolder)}");
+
+// create directory 
+WriteLine("Creating it...");
+CreateDirectory(newFolder);
+WriteLine($"Does it exist? {Path.Exists(newFolder)}");
+Write("Confirm the directory exists, and then press ENTER: ");
+ReadLine();
+// delete directory 
+WriteLine("Deleting it...");
+Delete(newFolder, recursive: true);
+WriteLine($"Does it exist? {Path.Exists(newFolder)}");
