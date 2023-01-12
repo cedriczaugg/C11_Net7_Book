@@ -67,6 +67,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter09", "Chapter09", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFileSystems", "source\Chapter09\WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStreams", "source\Chapter09\WorkingWithStreams\WorkingWithStreams.csproj", "{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,10 @@ Global
 		{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +214,7 @@ Global
 		{BE872CEF-AE2B-45C3-9431-279CCA44645A} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
 		{C2013E72-9ABF-46C0-8A27-21AAC72E4DC2} = {2DBB03B1-6E67-4BD6-9DEE-8D369641793D}
 		{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
+		{10C5DE4A-1D8F-4AF4-A246-5499D4E94419} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4CE8306-EB58-46E7-B70F-B290BC23BED4}
