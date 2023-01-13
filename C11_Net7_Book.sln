@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStreams", "sourc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithTarArchives", "source\Chapter09\WorkingWithTarArchives\WorkingWithTarArchives.csproj", "{C8E52B40-3319-48E5-B72F-B52FDD5226CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEncodings", "source\Chapter09\WorkingWithEncodings\WorkingWithEncodings.csproj", "{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{C8E52B40-3319-48E5-B72F-B52FDD5226CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8E52B40-3319-48E5-B72F-B52FDD5226CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8E52B40-3319-48E5-B72F-B52FDD5226CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +228,7 @@ Global
 		{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 		{10C5DE4A-1D8F-4AF4-A246-5499D4E94419} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 		{C8E52B40-3319-48E5-B72F-B52FDD5226CE} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
+		{549EF6EE-5D82-4C47-9FBB-492B2E214CA1} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4CE8306-EB58-46E7-B70F-B290BC23BED4}
