@@ -2,7 +2,7 @@
 
 using System.Xml.Serialization;
 using Packt.Shared;
-using FasrJson = System.Text.Json.JsonSerializer;
+using FastJson = System.Text.Json.JsonSerializer;
 
 using static System.Environment;
 using static  System.IO.Path;
@@ -93,7 +93,7 @@ WriteLine("* Deserializing JSON files");
 using (FileStream jsonLoad = File.Open(jsonPath, FileMode.Open))
 {
     List<Person>? loadedPeople =
-        await FasrJson.DeserializeAsync(utf8Json: jsonLoad, returnType: typeof(List<Person>)) as List<Person>;
+        await FastJson.DeserializeAsync(utf8Json: jsonLoad, returnType: typeof(List<Person>)) as List<Person>;
 
     if (loadedPeople is not null)
     {
