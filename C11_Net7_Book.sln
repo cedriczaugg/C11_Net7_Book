@@ -77,6 +77,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithSerialization", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithJson", "source\Chapter09\WorkingWithJson\WorkingWithJson.csproj", "{EC7F4064-BA17-49DC-94DA-59F116084C85}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter10", "Chapter10", "{DF23597B-FABF-4A7A-A2BE-2357A1953E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEFCore", "source\Chapter10\WorkingWithEFCore\WorkingWithEFCore.csproj", "{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +211,10 @@ Global
 		{EC7F4064-BA17-49DC-94DA-59F116084C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC7F4064-BA17-49DC-94DA-59F116084C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC7F4064-BA17-49DC-94DA-59F116084C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -243,6 +251,7 @@ Global
 		{549EF6EE-5D82-4C47-9FBB-492B2E214CA1} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 		{A2C2D6E0-86F0-4A03-9693-28946BC0A53A} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 		{EC7F4064-BA17-49DC-94DA-59F116084C85} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
+		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B} = {DF23597B-FABF-4A7A-A2BE-2357A1953E2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4CE8306-EB58-46E7-B70F-B290BC23BED4}
