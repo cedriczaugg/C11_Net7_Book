@@ -78,11 +78,11 @@ internal partial class Program
         Employee john = new()
         {
             Name = "John Jones",
-            DateOfBirth = new(1990, 7, 28)
+            DateOfBirth = new DateTime(1990, 7, 28)
         };
         john.WriteToConsole();
         john.EmployeeCode = "JJ001";
-        john.HireDate = new(204, 11, 23);
+        john.HireDate = new DateTime(204, 11, 23);
         WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
 
         WriteLine(john.ToString());
@@ -95,30 +95,27 @@ internal partial class Program
         WriteLine(aliceInEmployee.ToString());
         WriteLine(aliceInPerson.ToString());
 
-        Employee explicitAlice = (Employee)aliceInPerson;
-        if (aliceInPerson is Employee)
-        {
-            WriteLine($"{nameof(aliceInPerson)} IS an Employee");
-        }
-        
+        var explicitAlice = (Employee)aliceInPerson;
+        if (aliceInPerson is Employee) WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+
         try
         {
-            john.TimeTravel(when: new(1999, 12, 31));
-            john.TimeTravel(when: new(1950, 12, 25));
+            john.TimeTravel(new DateTime(1999, 12, 31));
+            john.TimeTravel(new DateTime(1950, 12, 25));
         }
         catch (PersonException ex)
         {
             WriteLine(ex.Message);
         }
 
-        string email1 = "foo@test.com";
-        string email2 = "foo&bar&test.com";
-        
-        WriteLine("{0} is a valid e-mail address: {1}", 
-            arg0: email1,
-            arg1: email1.IsValidEmail());
+        var email1 = "foo@test.com";
+        var email2 = "foo&bar&test.com";
+
         WriteLine("{0} is a valid e-mail address: {1}",
-            arg0: email2,
-            arg1: email2.IsValidEmail());
+            email1,
+            email1.IsValidEmail());
+        WriteLine("{0} is a valid e-mail address: {1}",
+            email2,
+            email2.IsValidEmail());
     }
 }

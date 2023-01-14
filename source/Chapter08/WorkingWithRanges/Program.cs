@@ -1,32 +1,31 @@
-﻿namespace WorkingWithRanges
+﻿namespace WorkingWithRanges;
+
+internal class Program
 {
-    internal class Program
+    private static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            string name = "Samantha Jones";
+        var name = "Samantha Jones";
 
-            // getting lengths of the first and last names
+        // getting lengths of the first and last names
 
-            int lengthOfFirst = name.IndexOf(' ');
-            int lengthOfLast = name.Length - lengthOfFirst - 1;
+        var lengthOfFirst = name.IndexOf(' ');
+        var lengthOfLast = name.Length - lengthOfFirst - 1;
 
-            // using substring
+        // using substring
 
-            string firstName = name.Substring(0, lengthOfFirst);
-            string lastName = name.Substring(name.Length - lengthOfLast, lengthOfLast);
+        var firstName = name.Substring(0, lengthOfFirst);
+        var lastName = name.Substring(name.Length - lengthOfLast, lengthOfLast);
 
-            WriteLine($"First name: {firstName}, Last name: {lastName}");
+        WriteLine($"First name: {firstName}, Last name: {lastName}");
 
-            // using spans
+        // using spans
 
-            ReadOnlySpan<char> nameAsSpan = name.AsSpan();
-            ReadOnlySpan<char> lastNameSpan = lastName.AsSpan();
-            ReadOnlySpan<char> firstNameSpan = firstName.AsSpan();
+        var nameAsSpan = name.AsSpan();
+        var lastNameSpan = lastName.AsSpan();
+        var firstNameSpan = firstName.AsSpan();
 
-            WriteLine("First name: {0}, Last name: {1}",
-                arg0: firstNameSpan.ToString(),
-                arg1: lastNameSpan.ToString());
-        }
+        WriteLine("First name: {0}, Last name: {1}",
+            firstNameSpan.ToString(),
+            lastNameSpan.ToString());
     }
 }

@@ -4,12 +4,12 @@ using System.Formats.Tar;
 
 try
 {
-    string current = Environment.CurrentDirectory;
+    var current = Environment.CurrentDirectory;
     WriteInformation($"Current directory: {current}");
 
-    string sourceDirectory = Path.Combine(current, "images");
-    string destinationDirectory = Path.Combine(current, "extracted");
-    string tarFile = Path.Combine(current, "images-archive.tar");
+    var sourceDirectory = Path.Combine(current, "images");
+    var destinationDirectory = Path.Combine(current, "extracted");
+    var tarFile = Path.Combine(current, "images-archive.tar");
 
     if (!Directory.Exists(sourceDirectory))
     {
@@ -23,16 +23,16 @@ try
         File.Delete(tarFile);
         WriteWarning($"{tarFile} already existed so it was deleted.");
     }
-    
+
     WriteInformation($"Archiving directory: {sourceDirectory}\n To .tar file: {tarFile}");
-    
+
     TarFile.CreateFromDirectory(
-        sourceDirectoryName: sourceDirectory,
-        destinationFileName: tarFile,
-        includeBaseDirectory: true);
-    
+        sourceDirectory,
+        tarFile,
+        true);
+
     WriteInformation($"Does {tarFile} exist? {File.Exists(tarFile)}.");
-    
+
     if (!Directory.Exists(destinationDirectory))
     {
         // If the destination directory does not exist then we must create
@@ -40,23 +40,19 @@ try
         Directory.CreateDirectory(destinationDirectory);
         WriteWarning($"{destinationDirectory} did not exist so it was created.");
     }
+
     WriteInformation(
         $"Extracting archive: {tarFile}\n To directory: {destinationDirectory}");
     TarFile.ExtractToDirectory(
-        sourceFileName: tarFile,
-        destinationDirectoryName: destinationDirectory,
-        overwriteFiles: true);
+        tarFile,
+        destinationDirectory,
+        true);
     if (Directory.Exists(destinationDirectory))
-    {
-        foreach (string dir in Directory.
-                     GetDirectories(destinationDirectory))
-        {
+        foreach (var dir in Directory.GetDirectories(destinationDirectory))
             WriteInformation(
                 $"Extracted directory {dir} containing these files: " +
                 string.Join(',', Directory.EnumerateFiles(dir)
                     .Select(file => Path.GetFileName(file))));
-        }
-    }
 }
 catch (Exception ex)
 {

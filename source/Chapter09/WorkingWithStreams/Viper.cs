@@ -4,10 +4,10 @@
 
 namespace WorkingWithStreams;
 
-static class Viper
+internal static class Viper
 {
     // define an array of Viper pilot call signs
-    public static string[] Callsigns = new[]
+    public static string[] Callsigns =
     {
         "Husker", "Starbuck", "Apollo", "Boomer",
         "Bulldog", "Athena", "Helo", "Racetrack"

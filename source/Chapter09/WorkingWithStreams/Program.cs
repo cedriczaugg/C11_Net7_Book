@@ -8,28 +8,25 @@ using static System.IO.Path;
 SectionTitle("Writing to text streams");
 
 // Define a file to write to
-string textFile  = Combine(CurrentDirectory, "streams.txt");
+var textFile = Combine(CurrentDirectory, "streams.txt");
 
 // Create a text file and return a helper writer
-StreamWriter text = File.CreateText(textFile);
+var text = File.CreateText(textFile);
 
 // Enumerate the strings, writing each one to the stream on a separate line
-foreach (string item in Viper.Callsigns)
-{
-    text.WriteLine(item);
-}
+foreach (var item in Viper.Callsigns) text.WriteLine(item);
 text.Close();
 
 // output the contents of the file
 WriteLine("{0} contains {1:N0} bytes.",
-    arg0: textFile,
-    arg1: new FileInfo(textFile).Length);
+    textFile,
+    new FileInfo(textFile).Length);
 WriteLine(File.ReadAllText(textFile));
 
 SectionTitle("Writing to XML streams");
 
 // Define a file path to write to
-string xmlFile = Combine(CurrentDirectory, "streams.xml");
+var xmlFile = Combine(CurrentDirectory, "streams.xml");
 
 // Declare variables for the filestream and XML writer
 FileStream? xmlFileStream = null;
@@ -48,10 +45,7 @@ try
     xml.WriteStartElement("Callsigns");
 
     // Enumerate the strings, writing each one to the stream
-    foreach (string item in Viper.Callsigns)
-    {
-        xml.WriteElementString("Callsign", item);
-    }
+    foreach (var item in Viper.Callsigns) xml.WriteElementString("Callsign", item);
 
     // write the close root element
     xml.WriteEndElement();
@@ -71,6 +65,7 @@ finally
         xml.Dispose();
         WriteLine("The XML writer's unmanaged resources have been disposed.");
     }
+
     if (xmlFileStream != null)
     {
         xmlFileStream.Dispose();
@@ -79,9 +74,9 @@ finally
 }
 
 // Output all the contents of the file
-WriteLine("{0} contains {1:N0} bytes.", arg0: xmlFile, arg1: new FileInfo(xmlFile).Length);
+WriteLine("{0} contains {1:N0} bytes.", xmlFile, new FileInfo(xmlFile).Length);
 WriteLine(File.ReadAllText(xmlFile));
 
 SectionTitle("Compressing streams");
-Compress(algorithm: "gzip");
-Compress(algorithm: "brotli");
+Compress("gzip");
+Compress("brotli");

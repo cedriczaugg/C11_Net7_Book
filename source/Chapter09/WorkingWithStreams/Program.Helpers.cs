@@ -4,11 +4,11 @@
 
 // namespace WorkingWithStreams;
 
-partial class Program
+internal partial class Program
 {
-    static void SectionTitle(string title)
+    private static void SectionTitle(string title)
     {
-        ConsoleColor previousColor = ForegroundColor;
+        var previousColor = ForegroundColor;
         ForegroundColor = ConsoleColor.Yellow;
         WriteLine("*");
         WriteLine($"* {title}");

@@ -3,18 +3,18 @@
 // </copyright>
 
 using System.Diagnostics.CodeAnalysis;
-using System.Text.RegularExpressions;
-
 
 namespace WorkingWithRegularExpressions;
 
 internal partial class Program
 {
     [StringSyntax(StringSyntaxAttribute.Regex)]
-    const string digitsOnlyText = @"^\d+$";
+    private const string digitsOnlyText = @"^\d+$";
+
     [StringSyntax(StringSyntaxAttribute.Regex)]
-    const string commaSeparatorText = 
+    private const string commaSeparatorText =
         "(?:^|,)(?=[^\"]|(\")?)\"?((?(1)[^\"]*|[^,\"]*))\"?(?=,|$)";
+
     [StringSyntax(StringSyntaxAttribute.DateTimeFormat)]
-    const string fullDateTime = "dddd, d MMMM yyyy";
+    private const string fullDateTime = "dddd, d MMMM yyyy";
 }

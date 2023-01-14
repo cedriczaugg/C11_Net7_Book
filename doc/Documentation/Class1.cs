@@ -1,7 +1,5 @@
-﻿namespace Documentation
-{
-    public class Class1
-    {
+﻿namespace Documentation;
 
-    }
+public class Class1
+{
 }

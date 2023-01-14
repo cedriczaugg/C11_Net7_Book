@@ -8,6 +8,13 @@ using System.Text.Json.Serialization;
 
 public class Book
 {
+    [JsonInclude] public DateTimeOffset Created;
+
+    public ushort Pages;
+
+    // Fields
+    [JsonInclude] public DateTime PublishDate;
+
     public Book(string title)
     {
         Title = title;
@@ -16,10 +23,4 @@ public class Book
     // Properties
     public string Title { get; set; }
     public string? Author { get; set; }
-    
-    // Fields
-    [JsonInclude] public DateTime PublishDate;
-    [JsonInclude] public DateTimeOffset Created;
-
-    public ushort Pages;
 }

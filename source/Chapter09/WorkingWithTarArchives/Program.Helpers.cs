@@ -4,27 +4,27 @@
 
 // namespace WorkingWithTarArchives;
 
-partial class Program
+internal partial class Program
 {
-    static void WriteError(string message)
+    private static void WriteError(string message)
     {
-        ConsoleColor previousColor = ForegroundColor;
+        var previousColor = ForegroundColor;
         ForegroundColor = ConsoleColor.Red;
         WriteLine($"FAIL: {message}");
         ForegroundColor = previousColor;
     }
-    
-    static void WriteWarning(string message)
+
+    private static void WriteWarning(string message)
     {
-        ConsoleColor previousColor = ForegroundColor;
+        var previousColor = ForegroundColor;
         ForegroundColor = ConsoleColor.DarkYellow;
         WriteLine($"WARN: {message}");
         ForegroundColor = previousColor;
     }
-    
-    static void WriteInformation(string message)
+
+    private static void WriteInformation(string message)
     {
-        ConsoleColor previousColor = ForegroundColor;
+        var previousColor = ForegroundColor;
         ForegroundColor = ConsoleColor.Blue;
         WriteLine($"INFO: {message}");
         ForegroundColor = previousColor;
