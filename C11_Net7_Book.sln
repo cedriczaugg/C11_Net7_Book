@@ -57,29 +57,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithText", "source\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithRegularExpressions", "source\Chapter08\WorkingWithRegularExpressions\WorkingWithRegularExpressions.csproj", "{599DC1F5-E41E-4C0C-9871-2A4E47C29BD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithCollections", "source\Chapter08\WorkingWithCollections\WorkingWithCollections.csproj", "{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithCollections", "source\Chapter08\WorkingWithCollections\WorkingWithCollections.csproj", "{D8CE9E29-F1FF-4AFB-959E-4243111C0AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRanges", "source\Chapter08\WorkingWithRanges\WorkingWithRanges.csproj", "{BE872CEF-AE2B-45C3-9431-279CCA44645A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithRanges", "source\Chapter08\WorkingWithRanges\WorkingWithRanges.csproj", "{BE872CEF-AE2B-45C3-9431-279CCA44645A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithNetworkResources", "source\Chapter08\WorkingWithNetworkResources\WorkingWithNetworkResources.csproj", "{C2013E72-9ABF-46C0-8A27-21AAC72E4DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithNetworkResources", "source\Chapter08\WorkingWithNetworkResources\WorkingWithNetworkResources.csproj", "{C2013E72-9ABF-46C0-8A27-21AAC72E4DC2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter09", "Chapter09", "{A3147F64-A805-474B-8A21-A5E172BD9C08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFileSystems", "source\Chapter09\WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFileSystems", "source\Chapter09\WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{566F3305-CD0E-4FD0-B5B9-C5FEE723CF31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStreams", "source\Chapter09\WorkingWithStreams\WorkingWithStreams.csproj", "{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithStreams", "source\Chapter09\WorkingWithStreams\WorkingWithStreams.csproj", "{10C5DE4A-1D8F-4AF4-A246-5499D4E94419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithTarArchives", "source\Chapter09\WorkingWithTarArchives\WorkingWithTarArchives.csproj", "{C8E52B40-3319-48E5-B72F-B52FDD5226CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithTarArchives", "source\Chapter09\WorkingWithTarArchives\WorkingWithTarArchives.csproj", "{C8E52B40-3319-48E5-B72F-B52FDD5226CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEncodings", "source\Chapter09\WorkingWithEncodings\WorkingWithEncodings.csproj", "{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEncodings", "source\Chapter09\WorkingWithEncodings\WorkingWithEncodings.csproj", "{549EF6EE-5D82-4C47-9FBB-492B2E214CA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithSerialization", "source\Chapter09\WorkingWithSerialization\WorkingWithSerialization.csproj", "{A2C2D6E0-86F0-4A03-9693-28946BC0A53A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithSerialization", "source\Chapter09\WorkingWithSerialization\WorkingWithSerialization.csproj", "{A2C2D6E0-86F0-4A03-9693-28946BC0A53A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithJson", "source\Chapter09\WorkingWithJson\WorkingWithJson.csproj", "{EC7F4064-BA17-49DC-94DA-59F116084C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithJson", "source\Chapter09\WorkingWithJson\WorkingWithJson.csproj", "{EC7F4064-BA17-49DC-94DA-59F116084C85}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter10", "Chapter10", "{DF23597B-FABF-4A7A-A2BE-2357A1953E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEFCore", "source\Chapter10\WorkingWithEFCore\WorkingWithEFCore.csproj", "{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEFCore", "source\Chapter10\WorkingWithEFCore\WorkingWithEFCore.csproj", "{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch10Ex02DataSerialization", "source\Chapter10\Ch10Ex02DataSerialization\Ch10Ex02DataSerialization.csproj", "{022F365B-FE29-44FC-A372-5CF1F963C7A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -215,6 +217,10 @@ Global
 		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022F365B-FE29-44FC-A372-5CF1F963C7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022F365B-FE29-44FC-A372-5CF1F963C7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022F365B-FE29-44FC-A372-5CF1F963C7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022F365B-FE29-44FC-A372-5CF1F963C7A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -252,6 +258,7 @@ Global
 		{A2C2D6E0-86F0-4A03-9693-28946BC0A53A} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 		{EC7F4064-BA17-49DC-94DA-59F116084C85} = {A3147F64-A805-474B-8A21-A5E172BD9C08}
 		{9C8680D7-F6F1-4569-B565-3A9AB7AC980B} = {DF23597B-FABF-4A7A-A2BE-2357A1953E2D}
+		{022F365B-FE29-44FC-A372-5CF1F963C7A6} = {DF23597B-FABF-4A7A-A2BE-2357A1953E2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4CE8306-EB58-46E7-B70F-B290BC23BED4}
