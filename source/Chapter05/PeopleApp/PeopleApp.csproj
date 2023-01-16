@@ -8,16 +8,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Using Include="System.Console" Static="true" />
+        <Using Include="System.Console" Static="true"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\PacktLibraryModern\PacktLibraryModern.csproj" />
-        <ProjectReference Include="..\PacktLibraryNetStandard2\PacktLibraryNetStandard2.csproj" />
+        <ProjectReference Include="..\PacktLibraryModern\PacktLibraryModern.csproj"/>
+        <ProjectReference Include="..\PacktLibraryNetStandard2\PacktLibraryNetStandard2.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+        <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0"/>
     </ItemGroup>
 
 </Project>

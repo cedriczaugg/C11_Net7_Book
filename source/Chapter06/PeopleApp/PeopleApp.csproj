@@ -8,15 +8,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Using Include="System.Console" Static="true" />
+        <Using Include="System.Console" Static="true"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\PacktLibrary\PacktLibrary.csproj" />
+        <ProjectReference Include="..\PacktLibrary\PacktLibrary.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+        <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0"/>
     </ItemGroup>
 
 </Project>

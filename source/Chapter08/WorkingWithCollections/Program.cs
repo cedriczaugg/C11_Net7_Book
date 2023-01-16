@@ -26,7 +26,7 @@ internal partial class Program
 
         Dictionary<string, string> keywords = new();
         // add using named parameters
-        keywords.Add(key: "int", value: "32-bit integer data type");
+        keywords.Add("int", "32-bit integer data type");
         // add using positional parameters
         keywords.Add("long", "64-bit integer data type");
         keywords.Add("float", "Single precision floating point number");
@@ -35,12 +35,9 @@ internal partial class Program
         Output("Dictionary values:", keywords.Values);
 
         WriteLine("Keywords and their definitions");
-        foreach (KeyValuePair<string, string> item in keywords)
-        {
-            WriteLine($" {item.Key}: {item.Value}");
-        }
+        foreach (var item in keywords) WriteLine($" {item.Key}: {item.Value}");
         // look up a value using a key
-        string key = "long";
+        var key = "long";
         WriteLine($"The definition of {key} is {keywords[key]}");
 
         Queue<string> coffee = new();
@@ -51,7 +48,7 @@ internal partial class Program
         coffee.Enqueue("Irina"); // back of queue
         Output("Initial queue from front to back", coffee);
         // server handles next person in queue
-        string served = coffee.Dequeue();
+        var served = coffee.Dequeue();
         WriteLine($"Served: {served}.");
         // server handles next person in queue
         served = coffee.Dequeue();
@@ -79,8 +76,8 @@ internal partial class Program
         WriteLine($"{vaccine.Peek()} will be next to be vaccinated.");
         OutputPQ("Current queue for vaccination:", vaccine.UnorderedItems);
 
-        ImmutableList<string> immutableCities = cities.ToImmutableList();
-        ImmutableList<string> newList = immutableCities.Add("Rio");
+        var immutableCities = cities.ToImmutableList();
+        var newList = immutableCities.Add("Rio");
         Output("Immutable list of cities:", immutableCities);
         Output("New list of cities:", newList);
     }

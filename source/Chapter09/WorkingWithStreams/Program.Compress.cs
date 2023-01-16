@@ -6,6 +6,7 @@
 
 // BrotliStream, GZipStream, CompressionMode
 // XmlWriter, XmlReader
+
 using System.IO.Compression;
 using System.Xml;
 using WorkingWithStreams;

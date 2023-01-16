@@ -1,30 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace WorkingWithCollections;
 
-namespace WorkingWithCollections
+internal partial class Program
 {
-    internal partial class Program
+    private static void Output(string title, IEnumerable<string> collection)
     {
-        static void Output(string title, IEnumerable<string> collection)
-        {
-            WriteLine(title);
-            foreach (string item in collection)
-            {
-                WriteLine($" {item}");
-            }
-        }
+        WriteLine(title);
+        foreach (var item in collection) WriteLine($" {item}");
+    }
 
-        static void OutputPQ<TElement, TPriority>(string title,
-            IEnumerable<(TElement Element, TPriority Priority)> collection)
-        {
-            WriteLine(title);
-            foreach ((TElement, TPriority) item in collection)
-            {
-                WriteLine($" {item.Item1}: {item.Item2}");
-            }
-        }
+    private static void OutputPQ<TElement, TPriority>(string title,
+        IEnumerable<(TElement Element, TPriority Priority)> collection)
+    {
+        WriteLine(title);
+        foreach ((TElement, TPriority) item in collection) WriteLine($" {item.Item1}: {item.Item2}");
     }
 }

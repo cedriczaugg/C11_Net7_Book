@@ -1,5 +1,4 @@
-﻿
-using NullHandling;
+﻿using NullHandling;
 
 var thisCannotBeNull = 4;
 // thisCannotBeNull = null; // compile error!
@@ -12,7 +11,7 @@ WriteLine(thisCouldBeNull);
 WriteLine(thisCouldBeNull.GetValueOrDefault());
 
 // the actual type of int? is Nullable<int>
-Nullable<int> thisCouldAlsoBeNull = null;
+int? thisCouldAlsoBeNull = null;
 thisCouldAlsoBeNull = 9;
 WriteLine(thisCouldAlsoBeNull);
 

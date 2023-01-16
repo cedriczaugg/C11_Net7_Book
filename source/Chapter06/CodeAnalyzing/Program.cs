@@ -4,22 +4,21 @@
 
 using System.Diagnostics;
 
-namespace CodeAnalyzing
+namespace CodeAnalyzing;
+
+/// <summary>
+///     The main class for the console app.
+/// </summary>
+internal class Program
 {
     /// <summary>
-    /// The main class for the console app.
+    ///     The main entry point for this console app.
     /// </summary>
-    internal class Program
+    /// <param name="args">
+    ///     A string array of arguments passed to the console app.
+    /// </param>
+    public static void Main(string[] args)
     {
-        /// <summary>
-        /// The main entry point for this console app.
-        /// </summary>
-        /// <param name="args">
-        /// A string array of arguments passed to the console app.
-        /// </param>
-        public static void Main(string[] args)
-        {
-            Debug.WriteLine("Hello, Debugger!");
-        }
+        Debug.WriteLine("Hello, Debugger!");
     }
 }
